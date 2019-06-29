@@ -1,35 +1,135 @@
-body{
-    margin: 0 auto;
-}
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.main-container{
-    max-width: 1000px;
+body {
+  margin: 0 auto;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  background: white;
+}
+
+main {
+  flex: 1 0 auto;
+  max-width: 1140px;
 }
 
 /* header */
-.jumbotron{
-    background: rgb(0, 130, 120);
+
+/* <-- navbar --> */
+.logo {
+  height: 30px;
+}
+#navbar-title {
+  font-family: "Ubuntu Mono", monospace;
+}
+.container-fluid {
+  max-width: 1140px;
+  display: flex;
+  justify-content: center;
+}
+/* <-- jumbotron --> */
+.jumbotron {
+  background: #c29d8b;
+  border-radius: 0;
+  padding: 20px 10px;
 }
 
-#title-jumbotron{
-    border-bottom: 1px solid white;
+#jumbotron-container {
+  margin-top: 20px;
+  font-size: 18px;
 }
-#portrait{
-    max-width: 100%
+
+#portrait {
+  max-width: 100%;
+  height: 250px;
+  float: left;
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
+  margin-right: 50px;
 }
 
 /* main */
-.title-main{
-    display: flex;
-    justify-content: center;
-    color: rgb(216, 159, 136)
+
+.main-header {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Ubuntu Mono", monospace;
+}
+/* <-- skills --> */
+.card-title {
+  text-align: center;
+  font-size: 30px;
 }
 
-/* portfolio */
-.image-portfolio{
-    max-width: 100%;
-  }
+#card-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  border-radius: 0;
+  margin-bottom: 100px;
+}
+/* <-- Formation --> */
+.berkeley {
+  float: left;
+}
+
+/* #imageberkeley{
+  float: left;
+} */
+
+/* <-- portfolio --> */
+#portfolio-container {
+  max-width: 1440px;
+}
+.link {
+  text-align: center;
+  text-decoration: none;
+}
+
+.card-deck {
+  max-width: 1140px;
+  text-align: center;
+}
+/* <-- Projet --> */
+#projet-container{
+  background: rgb(249, 239, 237);
+}
+
+
+/* <-- Logo --> */
+#section-logo {
+  margin: 100px;
+  text-align: center;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+.container {
+  max-width: 1140px;
+}
+.medium-logo {
+  height: 30px;
+  margin: 20px 40px;
+}
+.github-logo {
+  height: 50px;
+  margin: 20px 40px;
+}
+
+.top img {
+  float: right;
+}
+
+/* footer */
+#footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c29d8b;
+  opacity: 0.5;
+  height: 100px;
+}
