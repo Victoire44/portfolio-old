@@ -7,10 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
-    <title>Portoflio | Victoire Baron</title>
+    <title>Victoire Baron</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 </head>
 
 <body>
@@ -20,30 +23,30 @@
                 <a href="index.html">
                     <h1 id="navbar-title">Victoire Baron</h1>
                 </a>
-                <div id="logo-container">
-                    <a href="https://www.linkedin.com/in/victoirebaron/?locale=en_US" target="_blank"><img
-                            src="assets/images/linkedin.png" alt="Linkedin" class="logo m-3"></a>
-                    <a href="https://github.com/Victoire44" target="_blank"><img src="assets/images/github.png"
-                            alt="GitHub" class="logo"></a>
-                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/victoirebaron/?locale=en_US" target="_blank"><img
+                                src="assets/images/linkedin.png" alt="Linkedin" class="nav-logo"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/Victoire44" target="_blank"><img src="assets/images/github.png"
+                                alt="GitHub" class="nav-logo "></a>
+                    </li>
+                </ul>
+            </div>
             </div>
         </nav>
-
 
         <div class="jumbotron">
             <div id="jumbotron-container" class="container">
                 <img src="assets/images/portrait.jpg" alt="Portrait" id="portrait" class="rounded-circle">
-                <p>Ambitious <strong>Full Stack Web Developer</strong> who has recently transitioned over
+                <p>I'm Victoire, an ambitious<span style="color: rgb(250,0,99)"> Full Stack Web Developer</span> who has recently transitioned over
                     from
                     expert
                     in paintings.</p>
                 <p>I’m graduated from UC Berkeley Bootcamp where I used a variety of development
                     technologies in
                     front-end and back-end.</p>
-                <p>For example, I partnered with teams to build campsite search app using
-                    JavaScript, JQuery and
-                    Firebase to store the data.
-                </p>
                 <p>My 10 years of experience in the field of art history makes me think creatively with an
                     artistic
                     look that is always useful in web development.
@@ -57,93 +60,186 @@
         </div>
     </header>
 
-    <section id="portfolio-container" class="container">
-        <h1 class="main-header mb-5">Portfolio</h1>
-        <div class="card-deck">
-            <div class="card">
-                <img src="assets/images/netflix.png" class="card-img-top" alt="Netflix Gif">
-                <div class="card-body">
+    <main>
+        <section id="gallery" class="container">
+            <h1 class="main-header border-bottom mb-5">Portfolio</h1>
+            <div class="card-deck mb-5">
+                <div class="card gallery">
                     <a href="https://github.com/Victoire44/GifTastic" class="link" target="_blank">
-                        <h5 class="link-portfolio">Netfix Gif</h5>
+                        <img src="assets/images/netflix.png" class="card-img-top" alt="Netflix Gif">
+                        <div class="card-body">
+                            <h5 class="card-title">Netflix Gif</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
                     </a>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                </div>
+
+                <div class="card gallery">
+                    <a href="https://github.com/Victoire44/Word-Guess-Game" class="car-link" target="_blank">
+                        <img src="assets/images/word-guess-game.png" class="card-img-top" alt="Word Guess Game">
+                        <div class="card-body">
+                            <h5 class="card-title">Word Guess Game</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card gallery">
+                    <a href="https://github.com/Victoire44/unit-4-game" class="card-link" target="_blank">
+                        <img src="assets/images/ice-cream-collector.png" class="card-img-top" alt="Ice Cream collector">
+                        <div class="card-body">
+                            <h5 class="card-title">Ice Cream collector</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height
+                                action.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="card">
-                <img src="assets/images/word-guess-game.png" class="card-img-top" alt="Word Guess Game">
-                <div class="card-body">
-                    <a href="https://github.com/Victoire44/Word-Guess-Game" class="link" target="_blank">
-                        <h5 class="card-title">Word Guess Game</h5>
+
+            <div class="card-deck mb-5">
+                <div class="card gallery">
+                    <a href="https://github.com/Victoire44/Train-Scheduler" class="card-link" target="_blank">
+                        <img src="assets/images/train-scheduler.png" class="card-img-top" alt="Train scheduler">
+                        <div class="card-body">
+                            <h5 class="card-title">Train Scheduler</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.
+                            </p>
+                        </div>
                     </a>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
-                    </p>
+                </div>
+
+                <div class="card gallery">
+                    <a href="https://github.com/Victoire44/Train-Scheduler" class="card-link" target="_blank">
+                        <img src="assets/images/train-scheduler.png" class="card-img-top" alt="Train scheduler">
+                        <div class="card-body">
+                            <h5 class="card-title">Train Scheduler</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card gallery">
+                    <a href="https://github.com/Victoire44/Train-Scheduler" class="card-link" target="_blank">
+                        <img src="assets/images/train-scheduler.png" class="card-img-top" alt="Train scheduler">
+                        <div class="card-body">
+                            <h5 class="card-title">Train Scheduler</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.
+                            </p>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="card">
-                <img src="assets/images/ice-cream-collector.png" class="card-img-top" alt="Ice Cream collector">
-                <div class="card-body">
-                    <a href="https://github.com/Victoire44/unit-4-game" class="card-title" target="_blank">
-                        <h5 class="link-portfolio">Ice Cream collector</h5>
-                    </a>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to show that equal height
-                        action.</p>
+        </section>
+
+
+        <section id="project">
+            <div class="container">
+                <h1 class="main-header mb-5">Projects</h1>
+                <div class="card-deck">
+                    <div class="card project" style="width: 25rem;">
+                        <a href="https://github.com/Victoire44/project1" class="card-link" target="_blank">
+                            <img src="assets/images/campdad.png" class="card-img-top" alt="Campdad">
+                            <div class="card-body">
+                                <h5>Campdad</h5>
+                                <p>I partnered with teams to build campsite search app using
+                                    JavaScript, JQuery and
+                                    Firebase to store the data.
+                                </p>
+                                <a href="https://medium.com/@baronvictoire/lets-rescue-var-ce1675bc14ad"
+                                    target="_blank"><img src="assets/images/medium.png" alt="GitHub"
+                                        class="medium-logo"></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card project" style="width: 25rem;">
+                        <a href="https://github.com/Victoire44/project1" class="card-link" target="_blank">
+                            <img src="assets/images/campdad.png" class="card-img-top" alt="Campdad">
+                            <div class="card-body">
+                                <h5>Campdad</h5>
+                                <p>I partnered with teams to build campsite search app using
+                                    JavaScript, JQuery and
+                                    Firebase to store the data.
+                                </p>
+                                <a href="https://medium.com/@baronvictoire/lets-rescue-var-ce1675bc14ad"
+                                    target="_blank"><img src="assets/images/medium.png" alt="GitHub"
+                                        class="medium-logo"></a>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
+        </section>
+
+
+
+        <section id="contact">
+            <div class="container contact">
+                <a href="https://www.linkedin.com/in/victoirebaron/?locale=en_US" target="_blank"><img
+                        src="assets/images/Linkedin-full.png" alt="Linkedin" class="logo"></a>
+                <a href="https://github.com/Victoire44" target="_blank"><img src="assets/images/GitHub_Logo.png"
+                        alt="GitHub" class="logo"></a>
+            </div>
+        </section>
+
+
+        <div class="container upwards">
+            <a id="button"><img src="assets/images/chevron-upwards-arrow.png"></a>
         </div>
-        <div class="card-deck">
-            <div class="card">
-                <img src="assets/images/train-scheduler.png" class="card-img-top" alt="Train scheduler">
-                <div class="card-body">
-                    <a href="https://github.com/Victoire44/Train-Scheduler" class="link" target="_blank">
-                        <h5 class="link-portfolio">Train Scheduler</h5>
-                    </a>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="assets/images/bamazonM.gif" class="card-img-top" alt="Bamazon">
-                <div class="card-body">
-                    <a href="https://github.com/Victoire44/Train-Scheduler" class="link" target="_blank">
-                        <h5 class="link-portfolio">Bamazon</h5>
-                    </a>
-                    </a>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to show that equal
-                        height
-                        action.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
-    <section id="projet-container">
-        <h1 class="main-header mb-5">Projet</h1>
-        <div class="card card-projet" style="width: 30rem;">
-            <img src="assets/images/campdad.png" class="card-img-top" alt="Campdad">
-            <div class="card-body">
-                <a href="https://github.com/Victoire44/project1" class="link" target="_blank">
-                    <h5 class="link-portfolio">Campdad</h5>
-            </div>
-        </div>
-    </section>
-
-
-    <div class="container top">
-        <a href="#top"><img src="assets/images/chevron-arrow-up.png" style="height: 30px;"></span></a>
-    </div>
     </main>
 
     <footer>
-        <div id="footer-container" class="mt-5">
+        <div class="footer mt-5">
             © 2019 Victoire Baron
         </div>
     </footer>
 
 
 </body>
+
+<script>
+
+    $(document).ready(function () {
+
+        //Animate portfolio card
+        // $(".card").mouseover(function (e) {
+        //     $(this).fadeTo(200, 0.3);
+        // }).mouseout(function (e) {
+        //     $(this).stop(true).fadeTo(200, 1);
+        // });
+
+
+        $(".gallery").mouseover(function (e) {
+            $(".gallery").not(this).stop().animate({ opacity: 0.4 }, 300);
+            $(this).stop().animate({ opacity: 1.0 }, 300)
+        });
+        $(".gallery").mouseout(function (e) {
+            $(".gallery").stop().animate({ opacity: 1.0 }, 300)
+        });
+
+
+
+        //Animate chevron-arrow
+        var btn = $('#button');
+        $(window).scroll(function () {
+            $(window).scrollTop() > 300;
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+    });
+</script>
+
 
 </html>
