@@ -66,10 +66,10 @@ height: 100px;
   font-size: 22px;
 }
 
-/* .card-deck a {
+.card-deck a {
   color: black;
   text-decoration: none;
-} */
+}
 
 .card-img-top{
   height: 200px;
