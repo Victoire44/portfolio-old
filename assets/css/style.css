@@ -39,7 +39,7 @@ section{
 }
 
 .main-header {
-  text-align: center;
+  /* text-align: center; */
   font-size: 50px;
   font-family: "Open Sans", sans-serif;
   color: rgb(25, 35, 47);
@@ -77,8 +77,9 @@ height: 100px;
 
 /* <-- Projects --> */
 #project {
-  background-image: url("../images/geo.jpg");
+  /* background-image: url("../images/geo.jpg"); */
   height: 730px;
+  /* background: rgb(37, 40, 52); */
 }
 
 /* footer */
